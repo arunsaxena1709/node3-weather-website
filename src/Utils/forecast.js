@@ -13,7 +13,7 @@ const forecast = (lat, lon , callback) => {
             } else
             {
               const data = body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + 
-                      ' degrees out.It feels like ' + body.current.feelslike + ' degrees out.' 
+                      ' degrees out.It feels like ' + body.current.feelslike + ' degrees out.Humidity is ' + body.current.humidity
             callback(undefined,data)           
             }
 }
